@@ -5173,7 +5173,60 @@
                             <!-- <div class="subsc-banner verification-banner justify-between items-center">
 
                 </div> -->
-                            
+                            <div class="featured-head">
+                                <div class="cursor-pointer back-to-subscribe" id="back_to_subscribe">
+                                    <svg width="12" height="14" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.75 9.99609C0.75 10.1289 0.773438 10.25 0.820312 10.3594C0.867188 10.4688 0.941406 10.5703 1.04297 10.6641L9.85547 19.1953C10.0273 19.3672 10.2422 19.4531 10.5 19.4531C10.6719 19.4531 10.8242 19.4141 10.957 19.3359C11.0977 19.2656 11.207 19.1602 11.2852 19.0195C11.3711 18.8789 11.4141 18.7227 11.4141 18.5508C11.4141 18.3008 11.3281 18.0859 11.1562 17.9062L2.97656 9.99609L11.1562 2.09766C11.3281 1.91016 11.4141 1.69531 11.4141 1.45312C11.4141 1.27344 11.3711 1.11719 11.2852 0.984375C11.207 0.84375 11.0977 0.734375 10.957 0.65625C10.8242 0.578125 10.6719 0.539062 10.5 0.539062C10.2422 0.539062 10.0273 0.628906 9.85547 0.808594L1.04297 9.33984C0.941406 9.43359 0.867188 9.53516 0.820312 9.64453C0.773438 9.75391 0.75 9.87109 0.75 9.99609Z" fill="#0D0C22"/>
+                                    </svg>
+                                </div>
+                                <div class="cursor-pointer close-subsc" id="close-subsc">
+                                    <svg class="sub-close" width="12" height="12" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.9833 1L1 16.9833" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16.9967 17L1 1" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="subsc-content flex-both-center">
+                                <div class="flex flex-both-center flex-dir-c">
+                                    <div>
+                                        <div class="font-inter verify-title mb-12">Verify your email</div>
+                                        <span class="text-14 font-inter font-weight-400 w-full subsc-desc" id="verify_email_desc">
+                                            Please enter the verification code we sent to <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1c79647d716c70795c7e696571797d7f737a7a7979327f7371">[email &#160;protected]</a>
+                                        </span>
+                                    </div>
+                                    <div class="w-full subscribers-email-wrap subscribers-email-wrap-main mt-16">
+                                        <div class="xs-w-100 subscribers-email-wrap" id="subscribers-email-wrap">
+                                            <div class="subsc-verify-out">
+                                                <div class="verify-inp-out">
+                                                    <input id="input-1" min="0" max="9" step="1" type="number" placeholder="0" class="font-inter" maxlength="1"/>
+                                                </div>
+                                                <div class="verify-inp-out">
+                                                    <input id="input-2" min="0" max="9" step="1" type="number" placeholder="0" class="font-inter" maxlength="1" onpaste="return false"/>
+                                                </div>
+                                                <span class="pt-16">-</span>
+                                                <div class="verify-inp-out">
+                                                    <input id="input-3" min="0" max="9" step="1" type="number" placeholder="0" class="font-inter" maxlength="1" onpaste="return false"/>
+                                                </div>
+                                                <div class="verify-inp-out">
+                                                    <input id="input-4" min="0" max="9" step="1" type="number" placeholder="0" class="font-inter" maxlength="1" onpaste="return false"/>
+                                                </div>
+                                            </div>
+                                            <div class="text-fs-14 font-inter color-danger mt-8" id="verify-email-error"></div>
+                                            <button class="subsc-button text-fs-16 mt-16 flex xs-w-100 mx-auto" id="verify-btn" data-pageID="472257" data-campId="721">
+                                                <span id="verify-btn-text" class="verify-btn-text font-inter text-14 font-weight-500">Verify</span>
+                                                <span class="bl-circle-loader op-0" id="verify-btn-loader"></span>
+                                            </button>
+                                            <div class="subsc-bottom">
+                                                Didn't receive a code? 
+                                                <a>
+                                                    <span id='resend-otp' class="resend-otp-text underline">Resend</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="featured-subscribers-inside hidden pb-24" id="thankyou_modal">
                             <input type="hidden" value="1" id="show_confetti">
                             <!-- <div class="subsc-banner justify-between">
